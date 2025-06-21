@@ -1,36 +1,100 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-commerce Platform
 
-## Getting Started
+##  Project Overview
 
-First, run the development server:
+This project is a modern, high-performance e-commerce website. The application includes a responsive frontend built with Next.js and a backend API for managing product data.
 
+##  Tech Stack
+
+### Frontend
+- **Next.js** (React Framework)
+- **React** (UI Library)
+- **CSS/Tailwind CSS** (Styling)
+- **TypeScript/JavaScript** (Programming Language)
+
+### Backend
+- **Next.js API Routes** / **Node.js + Express** (Backend)
+- **JSON File Storage** / **In-Memory Array** (Data Storage)
+
+##  Features Implemented
+
+### 🔹 Task 1 - Frontend (Product Listing Page)
+-  **Product Listing Page** (`/products`)
+  - Displays list of products with image, name, and price
+  - Responsive design (mobile-friendly)
+  - Fetches data from backend API
+-  **Search functionality** 
+  - Search/filter functionality
+  - Single product detail page (`/products/[id]`)
+
+### 🔹 Task 2 - Backend (Product Management API)
+-  **API Endpoints**:
+  - `GET /api/products` - Retrieve all products
+  - `POST /api/products` - Add new product
+  - `DELETE /api/products/:id` - Delete product by ID
+
+## 🛠️ Installation & Setup
+
+### Prerequisites
+- Node.js (v16 or higher)
+- npm or yarn package manager
+
+### 1. Clone the Repository
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/spirit-bomb/geer-intern-assignment.git
+cd geer-intern-assignment
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Frontend Setup (Next.js)
+```bash
+cd frontend
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🚀 Running the Project
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Using Next.js API Route
+```bash
+cd frontend
+npm run dev
+```
+The application will be available at `http://localhost:3000`
 
-## Learn More
+## 📱 Pages & Routes
 
-To learn more about Next.js, take a look at the following resources:
+- `/` - Home page
+- `/products` - Product listing page
+- `/products/[id]` - Single product detail page (bonus feature)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🎨 Design Features
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- **Responsive Design** - Mobile-first approach
+- **Modern UI/UX** - Clean and intuitive interface
+- **Fast Performance** - Optimized for speed
+- **Search & Filter** - Easy product discovery (bonus)
 
-## Deploy on Vercel
+## 📝 Notes & Assumptions
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Data Storage
+- Products are stored in-memory array or JSON file for simplicity
+- In production, would use a proper database (MongoDB, PostgreSQL, etc.)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### Image Handling
+- Product images are referenced via URLs
+- In production, would implement proper image upload and storage
+
+### Error Handling
+- Basic error handling implemented
+- Production version would include comprehensive error management
+
+## 🚧 Future Enhancements
+
+- User authentication and authorization
+- Shopping cart functionality
+- Payment integration
+- Product categories and advanced filtering
+- Product reviews and ratings
+- Admin dashboard for product management
+- Database integration (MongoDB/PostgreSQL)
+- Image upload functionality
+- SEO optimization
